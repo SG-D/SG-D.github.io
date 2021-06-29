@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>에브리타임</title>
+        <meta charset="UTF-8">
+
+        <style>
+            body {
+                margin: 20px 30px;
+                padding:0;
+                overflow: auto;
+                width: 700px;
+            }
+            #title {
+                margin: 5px 0px;
+                padding: 12px;
+                border: solid 1px #cdcdcd;
+
+                font-size: 26px;
+                font-weight: bold;
+            }
+            #write {
+                margin: 5px 0px;
+                padding: 12px;
+                border: solid 2px #cdcdcd;
+                background-color: #f5f5f5;
+                resize: none;
+                width:673px
+            }
+            #postlist {
+                margin: none;
+                border: solid 1px #cdcdcd;
+                border-bottom: none;
+                width: 100%;
+            }
+            .post {
+                border-bottom: solid 1px #cdcdcd;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="title">자유게시판</div>
+        <textarea id="write" rows="1" placeholder="새 글을 작성해주세요!"></textarea>
+        <div id="postlist">
+            <div class="post">
+                <iframe src="./post1.html" frameborder="0" width="100%"></iframe>
+            </div>
+            <div class="post">
+                <iframe src="./post2.html" frameborder="0" width="100%"></iframe>
+            </div>
+            <div class="post">
+                <iframe src="./post3.html" frameborder="0" width="100%"></iframe>
+            </div>
+            <div class="post">
+                <iframe src="./post4.html" frameborder="0" width="100%"></iframe>
+            </div>
+        </div>
+    </body>
+</html>
