@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                display: grid;
+                grid-template-columns: 75px 1fr;
+                padding: 10px;
+            }
+            #image {
+                width: 75px;
+                height: 100px;
+                background-size: cover;
+            }
+            #info {
+                margin: 0 10px;
+                line-height: 150%;
+            }
+            h3, h4 {
+                margin: 0;
+            }
+            h4 {
+                color: red;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            span {
+                color: #dddddd;
+                text-decoration: line-through;
+            }
+        </style>
+    </head>
+    <body>
+        <div id=image style="background-image: url(./img/book.jpg);"></div>
+        <div id=info>
+            <h3>C언어 Express(쉽게 풀어쓴)(개정판 3판)</h3>
+            천인국 지음<br>
+            생능 출판<br>
+            <h4>15,000원 <span>30,000원</span></h4>
+        </div>
+    </body>
+</html>

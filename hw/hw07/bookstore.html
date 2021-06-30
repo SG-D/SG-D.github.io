@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>에브리타임</title>
+        <meta charset="UTF-8">
+
+        <style>
+            body {
+                display: grid;
+                grid-template-columns: 1fr 700px 1fr;
+            }
+            #article {
+                margin: 20px 30px;
+                padding:0;
+                overflow: auto;
+                width: 700px;
+            }
+            #write {
+                margin: 5px 0px;
+                padding: 12px;
+                border: solid 2px #cdcdcd;
+                border-radius: 5px;
+                resize: none;
+                width:672px;
+                font-size: 16px;
+            }
+            #postlist {
+                margin: none;
+                margin-top: 25px;
+                border: solid 1px #cdcdcd;
+                border-bottom: none;
+                width: 698px;
+            }
+            .post {
+                border-bottom: solid 1px #cdcdcd;
+            }
+            select {
+                float: right;
+            }
+            h3 {
+                margin-bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+        <div id="article">
+            <textarea id="write" rows="1" placeholder="구매할 책을 검색하세요!"></textarea>
+                <h3>최근 올라온 책</h3>
+                <select name="univ" id="select">
+                    <option value="동덕여대">동덕여대</option>
+                    <option value="ect">그 외</option>
+                </select>
+            <div id="postlist">
+                <div class="post">
+                    <iframe src="./book.html" frameborder="0" width="100%"></iframe>
+                </div>
+                <div class="post">
+                    <iframe src="./book.html" frameborder="0" width="100%"></iframe>
+                </div>
+                <div class="post">
+                    <iframe src="./book.html" frameborder="0" width="100%"></iframe>
+                </div>
+                <div class="post">
+                    <iframe src="./book.html" frameborder="0" width="100%"></iframe>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>에브리타임</title>
+        <meta charset="UTF-8">
+
+        <style>
+            * {
+                margin: 0;
+                padding:0;
+            }
+            a:link, a:visited {
+                color: #222222;
+                text-decoration: none;
+            }
+            header {
+                display: grid;
+                grid-template-columns: auto 1fr 150px;
+            }
+            #logo {
+                margin: 20px 20px 10px;
+            }
+            #menu {
+                margin: 40px 50px 10px;
+                padding: 5px 0px 0px;
+            }
+            #menu li{
+                font-size: 20px;
+                font-weight: bold;
+                display: inline;
+                list-style: none;
+            }
+            #menu2 {
+                float: right;
+                margin: 20px 5px 0px 0px;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            #menu2 li {
+                display: inline;
+                list-style: none;
+            }
+            #list {
+                display: grid;
+                grid-template-columns: 1fr 150px 150px 150px 150px 1fr;
+                padding: 30px;
+                background-color: #f5f5f5;
+                border-top: solid 1px #cdcdcd;
+                border-bottom: solid 1px #cdcdcd;
+                line-height: 160%;
+            }
+            ul.list{
+                border-left: solid 1px #cdcdcd;
+                padding: 0px 0px 0px 10px;
+                list-style: none;
+            }
+            iframe {
+                width: 100%;
+                height: 1000px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <ul id="logo">
+                <a href="./hw07.html"><img src="./img/logo.PNG"></a>
+            </ul>
+            <ul id = "menu">
+                <li><a href="./hw07.html">게시판 </a></li>&nbsp;
+                <li><a href="./schedule.html" target="iframe">시간표 </a></li>&nbsp;
+                <li><a href="">강의평가 </a></li>&nbsp;
+                <li><a href="bookstore.html" target="iframe">책방</a></li>
+            </ul>
+            <ul id = "menu2">
+                <li><a href="">쪽지함 </a></li>&nbsp;
+                <li><a href="">내 정보</a></li>
+            </ul>
+        </header>
+        <div id="list">
+            <div></div>
+            <ul class="list">
+                <li><a href="./board.html" target="iframe">자유게시판</a><br></li>
+                <li><a href="./board.html" target="iframe">비밀게시판</a><br></li>
+                <li><a href="./board.html" target="iframe">졸업생게시판</a><br></li>
+                <li><a href="./board.html" target="iframe">새내기게시판</a><br></li>
+            </ul>
+            <ul class="list">
+                <li><a href="./board.html" target="iframe">시사/이슈</a><br></li>
+                <li><a href="./board.html" target="iframe">장터게시판</a><br></li>
+                <li><a href="./board.html" target="iframe">홍보게시판</a><br></li>
+                <li><a href="./board.html" target="iframe">동아리/학회</a><br></li>
+            </ul>
+            <ul class="list">
+                <li><a href="./board.html" target="iframe">정보게시판</a><br></li>
+                <li><a href="./board.html" target="iframe">취업/진로</a><br></li>
+                <li><a href="./board.html" target="iframe">총학생회</a><br></li>
+                <li><a href="./board.html" target="iframe">학보사</a><br></li>
+            </ul>
+            <ul class="list">
+                <li><a href="./board.html" target="iframe">게시판1</a><br></li>
+                <li><a href="./board.html" target="iframe">게시판2</a><br></li>
+                <li><a href="./board.html" target="iframe">게시판3</a><br></li>
+                <li><a href="./board.html" target="iframe">게시판4</a><br></li>
+            </ul>
+            <div></div>
+        </div>
+        <iframe name="iframe" frameborder="0"></iframe>
+    </body>
+</html>
