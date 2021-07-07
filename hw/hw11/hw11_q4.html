@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <p>[과일1]</p>
+    <p id="data10"></p>
+    <p id="data20"></p>
+    <p id="data30"></p>
+    <p>[과일2]</p>
+    <p id="data11"></p>
+    <p id="data21"></p>
+    <p id="data31"></p>
+    <p>[과일3]</p>
+    <p id="data12"></p>
+    <p id="data22"></p>
+    <p id="data32"></p>
+    <script>
+        var fruits = [
+            { name: '사과', cost: 21000, num: 10 },
+            { name: '참외', cost: 18000, num: 20 },
+            { name: '귤', cost: 15000, num: 30 }
+        ]
+        for(var i=0; i<3; i++) {
+            var fname=document.getElementById("data1"+i);
+            fname.textContent='과일 이름 : ' + fruits[i].name;
+            var fcost=document.getElementById("data2"+i);
+            fcost.textContent='과일 가격 : ' + fruits[i].cost;
+            var fnum=document.getElementById("data3"+i);
+            fnum.textContent='과일 개수 : ' + fruits[i].num;
+        }
+    </script>
+</body>
+
+</html>

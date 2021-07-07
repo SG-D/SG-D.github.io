@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <p>[과일1]</p>
+    <p id="data0"></p>
+    <p>[과일2]</p>
+    <p id="data1"></p>
+    <p>[과일3]</p>
+    <p id="data2"></p>
+    <script>
+        var fruits = new Array(
+            [ '사과', 21000, 10 ],
+            [ '참외', 18000, 20 ],
+            [ '귤', 15000, 30 ]
+        );
+        for(var i=0; i<3; i++) {
+            var fname=document.getElementById("data"+i);
+            fname.textContent=fruits[i];
+        }
+    </script>
+</body>
+
+</html>

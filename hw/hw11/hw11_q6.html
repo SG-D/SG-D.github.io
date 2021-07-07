@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h2>내가 살아온 인생 계산하기</h2>
+    생년월일 입력 : <input id="birth" type="date">
+    <input type="button" value="나이 계산" onclick="calc()">
+    <p id=result>당신은 태어나서부터 ???일 경과해서 지금은 ???살입니다.</p>
+    <script>
+        function calc() {
+            var birth=document.getElementById("birth").value;
+        var today=new Date();
+        var day=document.getElementById("result");
+            day.innerHTML="당신은 태어나서부터" + ((birth.getTime - today.getTime())/1000/60/60/24) +
+            "일 경과해서 지금은 " + ((birth.getTime - today.getTime())/1000/60/60/24/365+1) + "살입니다.";
+        }
+    </script>
+</body>
+
+</html>
